@@ -1,0 +1,89 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:              lhasa_apso_01.jpg  label:                 lhasa apso
+ 2 key:              lhasa_apso_02.jpg  label:                 lhasa apso
+ 3 key:            wooden_spoon_01.jpg  label:               wooden spoon
+ 4 key:       superb_fairy_wren_01.jpg  label:          superb fairy wren
+
+     MATCH:
+
+           wooden_spoon_01.jpg: 
+Real:               wooden spoon   Classifier:                   wooden spoon
+
+ NOT A MATCH:
+
+             lhasa_apso_01.jpg: 
+Real:                 lhasa apso   Classifier: tibetan terrier, chrysanthemum dog
+
+             lhasa_apso_02.jpg: 
+Real:                 lhasa apso   Classifier: tibetan terrier, chrysanthemum dog
+
+      superb_fairy_wren_01.jpg: 
+Real:          superb fairy wren   Classifier:                      chickadee
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+     MATCH:
+
+           wooden_spoon_01.jpg: 
+Real:               wooden spoon   Classifier:                   wooden spoon  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+             lhasa_apso_01.jpg: 
+Real:                 lhasa apso   Classifier: tibetan terrier, chrysanthemum dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+             lhasa_apso_02.jpg: 
+Real:                 lhasa apso   Classifier: tibetan terrier, chrysanthemum dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+      superb_fairy_wren_01.jpg: 
+Real:          superb fairy wren   Classifier:                      chickadee  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 1 # NOT Matches: 3
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+---------------------------
+Final results of classification with vgg model
+---------------------------
+number of images: 4
+number of dog images: 2
+number of non-dog images: 2
+number of matches between pet & classifier labels: 1
+number of correctly classified dog images: 2
+number of correctly classified NON-dog images: 1
+number of correctly classified dog breeds: 0
+percentage of correct matches: 25%
+percentage of correctly classified dogs: 100%
+percentage of correctly classified dog breeds: 0%
+percentage of correctly classified NON-dogs: 50%
+---------------------------
+Additional results:
+---------------------------
+---------------------------
+
+---------------------------
+The following are the images incorrectly classified as dogs
+---------------------------
+
+---------------------------
+The following are the images that were correctly identified as dogs but with incorrectly classified breeds
+---------------------------
+lhasa_apso_01.jpg is breed lhasa apso but was classified as tibetan terrier, chrysanthemum dog
+lhasa_apso_02.jpg is breed lhasa apso but was classified as tibetan terrier, chrysanthemum dog
+
+** Total Elapsed Runtime: 0:0:3
