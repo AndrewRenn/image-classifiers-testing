@@ -310,7 +310,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog:  50.0  Pct Corr Breed:  93.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  93.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -323,12 +323,12 @@ number of dog images: 30
 number of non-dog images: 10
 number of matches between pet & classifier labels: 35
 number of correctly classified dog images: 30
-number of correctly classified NON-dog images: 5
+number of correctly classified NON-dog images: 10
 number of correctly classified dog breeds: 28
 percentage of correct matches: 87%
 percentage of correctly classified dogs: 100%
 percentage of correctly classified dog breeds: 93%
-percentage of correctly classified NON-dogs: 50%
+percentage of correctly classified NON-dogs: 100%
 ---------------------------
 Additional results:
 ---------------------------
@@ -344,4 +344,4 @@ The following are the images that were correctly identified as dogs but with inc
 Great_pyrenees_05367.jpg is breed great pyrenees but was classified as kuvasz
 Beagle_01170.jpg is breed beagle but was classified as walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:0:33
+** Total Elapsed Runtime: 0:0:34

@@ -310,7 +310,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog:  30.0  Pct Corr Breed:  90.0
+Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -323,12 +323,12 @@ number of dog images: 30
 number of non-dog images: 10
 number of matches between pet & classifier labels: 33
 number of correctly classified dog images: 30
-number of correctly classified NON-dog images: 3
+number of correctly classified NON-dog images: 9
 number of correctly classified dog breeds: 27
 percentage of correct matches: 82%
 percentage of correctly classified dogs: 100%
 percentage of correctly classified dog breeds: 90%
-percentage of correctly classified NON-dogs: 30%
+percentage of correctly classified NON-dogs: 90%
 ---------------------------
 Additional results:
 ---------------------------
@@ -337,6 +337,7 @@ Additional results:
 ---------------------------
 The following are the images incorrectly classified as dogs
 ---------------------------
+cat_01.jpg is cat but was classified as norwegian elkhound, elkhound
 
 ---------------------------
 The following are the images that were correctly identified as dogs but with incorrectly classified breeds
@@ -345,4 +346,4 @@ Great_pyrenees_05367.jpg is breed great pyrenees but was classified as kuvasz
 Beagle_01170.jpg is breed beagle but was classified as walker hound, walker foxhound
 Golden_retriever_05182.jpg is breed golden retriever but was classified as leonberg
 
-** Total Elapsed Runtime: 0:0:5
+** Total Elapsed Runtime: 0:0:6

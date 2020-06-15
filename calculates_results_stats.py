@@ -4,7 +4,7 @@
 #                                                                             
 # PROGRAMMER: Andrew Renn
 # DATE CREATED: 09/06/2020
-# REVISED DATE: 09/06/2020
+# REVISED DATE: 14/06/2020
 # PURPOSE: Create a function calculates_results_stats that calculates the 
 #          statistics of the results of the programrun using the classifier's model 
 #          architecture to classify the images. This function will use the 
@@ -78,17 +78,21 @@ def calculates_results_stats(results_dic):
     n_match = 0
     n_correct_dogs = 0
     n_correct_breed = 0
+    n_correct_notdogs = 0
     
     for filename, data in results_dic.items():
         label, classification, is_correct, label_is_dog, class_is_dog = data
         
         n_match += is_correct
-        n_dogs_img += label_is_dog
-        n_correct_dogs += label_is_dog * class_is_dog
-        n_correct_breed += is_correct * label_is_dog * class_is_dog
-    
-    n_notdogs_img = n_images - n_dogs_img
-    n_correct_notdogs = n_match - n_correct_breed
+        if label_is_dog:
+            n_dogs_img += label_is_dog
+            n_correct_dogs += label_is_dog * class_is_dog
+            n_correct_breed += is_correct * label_is_dog * class_is_dog
+        
+        else:
+            if class_is_dog == 0:
+                n_correct_notdogs += 1
+            n_notdogs_img += 1
     
     pct_match = int((n_match/n_images)*100)
     pct_correct_dogs = int((n_correct_dogs/n_dogs_img)*100)

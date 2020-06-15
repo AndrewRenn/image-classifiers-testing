@@ -310,7 +310,7 @@ PetLabelDog: 1  ClassLabelDog: 1
 
  ** Statistics from calculates_results_stats() function:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
-Pct Corr dog: 100.0 Pct Corr NOTdog:   0.0  Pct Corr Breed:  80.0
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -323,12 +323,12 @@ number of dog images: 30
 number of non-dog images: 10
 number of matches between pet & classifier labels: 30
 number of correctly classified dog images: 30
-number of correctly classified NON-dog images: 0
+number of correctly classified NON-dog images: 10
 number of correctly classified dog breeds: 24
 percentage of correct matches: 75%
 percentage of correctly classified dogs: 100%
 percentage of correctly classified dog breeds: 80%
-percentage of correctly classified NON-dogs: 0%
+percentage of correctly classified NON-dogs: 100%
 ---------------------------
 Additional results:
 ---------------------------
